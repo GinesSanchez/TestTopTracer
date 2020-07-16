@@ -14,6 +14,9 @@
 		75320D4924C03845003E8B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75320D4824C03845003E8B4C /* Assets.xcassets */; };
 		75320D4C24C03845003E8B4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75320D4A24C03845003E8B4C /* LaunchScreen.storyboard */; };
 		75320D5724C03845003E8B4C /* TestTopTracerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75320D5624C03845003E8B4C /* TestTopTracerTests.swift */; };
+		75320D6724C03A09003E8B4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75320D6524C03A09003E8B4C /* LoginViewController.swift */; };
+		75320D6824C03A09003E8B4C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75320D6624C03A09003E8B4C /* LoginViewController.xib */; };
+		75320D6C24C03A2E003E8B4C /* ViewModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75320D6B24C03A2E003E8B4C /* ViewModuleFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		75320D5224C03845003E8B4C /* TestTopTracerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTopTracerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75320D5624C03845003E8B4C /* TestTopTracerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTopTracerTests.swift; sourceTree = "<group>"; };
 		75320D5824C03845003E8B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75320D6524C03A09003E8B4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		75320D6624C03A09003E8B4C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		75320D6B24C03A2E003E8B4C /* ViewModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModuleFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		75320D3E24C03844003E8B4C /* TestTopTracer */ = {
 			isa = PBXGroup;
 			children = (
+				75320D6124C039BB003E8B4C /* Source */,
 				75320D3F24C03844003E8B4C /* AppDelegate.swift */,
 				75320D4124C03844003E8B4C /* SceneDelegate.swift */,
 				75320D4324C03844003E8B4C /* ViewController.swift */,
@@ -97,6 +104,56 @@
 				75320D5824C03845003E8B4C /* Info.plist */,
 			);
 			path = TestTopTracerTests;
+			sourceTree = "<group>";
+		};
+		75320D6124C039BB003E8B4C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				75320D6924C03A10003E8B4C /* Factories */,
+				75320D6224C039C2003E8B4C /* ViewModules */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		75320D6224C039C2003E8B4C /* ViewModules */ = {
+			isa = PBXGroup;
+			children = (
+				75320D6324C039D4003E8B4C /* LogIn */,
+			);
+			path = ViewModules;
+			sourceTree = "<group>";
+		};
+		75320D6324C039D4003E8B4C /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				75320D6424C039E1003E8B4C /* LogIn */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		75320D6424C039E1003E8B4C /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				75320D6524C03A09003E8B4C /* LoginViewController.swift */,
+				75320D6624C03A09003E8B4C /* LoginViewController.xib */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		75320D6924C03A10003E8B4C /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				75320D6A24C03A17003E8B4C /* ViewModuleFactory */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		75320D6A24C03A17003E8B4C /* ViewModuleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				75320D6B24C03A2E003E8B4C /* ViewModuleFactory.swift */,
+			);
+			path = ViewModuleFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75320D6824C03A09003E8B4C /* LoginViewController.xib in Resources */,
 				75320D4C24C03845003E8B4C /* LaunchScreen.storyboard in Resources */,
 				75320D4924C03845003E8B4C /* Assets.xcassets in Resources */,
 				75320D4724C03844003E8B4C /* Main.storyboard in Resources */,
@@ -200,6 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75320D6724C03A09003E8B4C /* LoginViewController.swift in Sources */,
+				75320D6C24C03A2E003E8B4C /* ViewModuleFactory.swift in Sources */,
 				75320D4424C03844003E8B4C /* ViewController.swift in Sources */,
 				75320D4024C03844003E8B4C /* AppDelegate.swift in Sources */,
 				75320D4224C03844003E8B4C /* SceneDelegate.swift in Sources */,
