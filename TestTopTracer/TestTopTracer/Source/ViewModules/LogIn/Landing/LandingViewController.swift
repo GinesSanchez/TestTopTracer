@@ -8,11 +8,27 @@
 
 import UIKit
 
+protocol LandingViewControllerDelegate: class {
+    func didTapBackButton()
+}
+
 final class LandingViewController: UIViewController {
+
+    var viewModel: LandingViewControllerDelegate?
+
+    @IBOutlet weak var backButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+}
+
+extension LandingViewController {
+    @IBAction func backButtonTapped(_ sender: Any) {
+        viewModel?.didTapBackButton()
+    }
+}
+
+extension LandingViewController: LandingViewModelDelegate {
+    
 }

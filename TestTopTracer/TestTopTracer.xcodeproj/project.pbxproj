@@ -20,6 +20,7 @@
 		75320D6E24C0A56D003E8B4C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75320D6D24C0A56D003E8B4C /* LoginViewModel.swift */; };
 		75320D7224C0B078003E8B4C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75320D7024C0B078003E8B4C /* LandingViewController.swift */; };
 		75320D7324C0B078003E8B4C /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75320D7124C0B078003E8B4C /* LandingViewController.xib */; };
+		75320D7524C0B56E003E8B4C /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75320D7424C0B56E003E8B4C /* LandingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		75320D6D24C0A56D003E8B4C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		75320D7024C0B078003E8B4C /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		75320D7124C0B078003E8B4C /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
+		75320D7424C0B56E003E8B4C /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				75320D7024C0B078003E8B4C /* LandingViewController.swift */,
+				75320D7424C0B56E003E8B4C /* LandingViewModel.swift */,
 				75320D7124C0B078003E8B4C /* LandingViewController.xib */,
 			);
 			path = Landing;
@@ -278,6 +281,7 @@
 			files = (
 				75320D6724C03A09003E8B4C /* LoginViewController.swift in Sources */,
 				75320D7224C0B078003E8B4C /* LandingViewController.swift in Sources */,
+				75320D7524C0B56E003E8B4C /* LandingViewModel.swift in Sources */,
 				75320D6C24C03A2E003E8B4C /* ViewModuleFactory.swift in Sources */,
 				75320D6E24C0A56D003E8B4C /* LoginViewModel.swift in Sources */,
 				75320D4424C03844003E8B4C /* ViewController.swift in Sources */,

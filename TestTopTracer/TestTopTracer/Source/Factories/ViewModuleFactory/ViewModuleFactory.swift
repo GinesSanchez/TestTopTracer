@@ -23,7 +23,7 @@ final class ViewModuleFactory: ViewModuleFactoryType {
 
     func createLandingViewModule(navigationController: UINavigationController) -> LandingViewController {
         let viewController = LandingViewController.init(nibName: "LandingViewController", bundle: nil)
-        //TODO: Add view model
+        viewController.viewModel = LandingViewModel(delegate: viewController, navigationController: navigationController)
         return viewController
     }
 }

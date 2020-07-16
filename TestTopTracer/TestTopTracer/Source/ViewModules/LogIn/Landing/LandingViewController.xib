@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingViewController" customModule="TestTopTracer" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="PgJ-7a-VQi" id="WbA-JR-uWQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,7 +17,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.92941176469999998" green="0.41568627450000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgJ-7a-VQi">
+                    <rect key="frame" x="177" y="433" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ELS-g9-odd"/>
+                        <constraint firstAttribute="width" constant="60" id="jnz-Yh-2O4"/>
+                    </constraints>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="ypR-au-oxM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PgJ-7a-VQi" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="FmK-5u-O0R"/>
+                <constraint firstItem="PgJ-7a-VQi" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="N4g-AM-zH3"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="141" y="137"/>
         </view>
