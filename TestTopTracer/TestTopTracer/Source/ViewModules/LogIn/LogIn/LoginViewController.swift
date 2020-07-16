@@ -80,6 +80,6 @@ extension LoginViewController: UITextFieldDelegate {
 
 extension LoginViewController: LoginViewModelDelegate {
     func viewModel(_ viewModel: LoginViewModelType, showErrorAlertWithMessage message: String) {
-        print(message)
+        showErrorAlert(message: message)
     }
 }

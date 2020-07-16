@@ -21,6 +21,7 @@
 		75320D7224C0B078003E8B4C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75320D7024C0B078003E8B4C /* LandingViewController.swift */; };
 		75320D7324C0B078003E8B4C /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75320D7124C0B078003E8B4C /* LandingViewController.xib */; };
 		75320D7524C0B56E003E8B4C /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75320D7424C0B56E003E8B4C /* LandingViewModel.swift */; };
+		75320D7824C0B877003E8B4C /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75320D7724C0B877003E8B4C /* ViewController+Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		75320D7024C0B078003E8B4C /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		75320D7124C0B078003E8B4C /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
 		75320D7424C0B56E003E8B4C /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		75320D7724C0B877003E8B4C /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		75320D6124C039BB003E8B4C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				75320D7624C0B855003E8B4C /* Extensions */,
 				75320D6924C03A10003E8B4C /* Factories */,
 				75320D6224C039C2003E8B4C /* ViewModules */,
 			);
@@ -174,6 +177,14 @@
 				75320D7124C0B078003E8B4C /* LandingViewController.xib */,
 			);
 			path = Landing;
+			sourceTree = "<group>";
+		};
+		75320D7624C0B855003E8B4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75320D7724C0B877003E8B4C /* ViewController+Alert.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75320D7824C0B877003E8B4C /* ViewController+Alert.swift in Sources */,
 				75320D6724C03A09003E8B4C /* LoginViewController.swift in Sources */,
 				75320D7224C0B078003E8B4C /* LandingViewController.swift in Sources */,
 				75320D7524C0B56E003E8B4C /* LandingViewModel.swift in Sources */,
