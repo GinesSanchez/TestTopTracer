@@ -39,7 +39,7 @@
                                         <constraint firstAttribute="width" constant="180" id="Jda-dT-O5B"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" textContentType="username"/>
                                 </textField>
                             </subviews>
                         </stackView>
@@ -58,7 +58,7 @@
                                         <constraint firstAttribute="width" constant="180" id="TeR-0T-GER"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" textContentType="password"/>
                                 </textField>
                             </subviews>
                         </stackView>

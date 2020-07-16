@@ -9,13 +9,21 @@
 import UIKit
 
 protocol ViewModuleFactoryType {
-    func createLoginViewModule() -> LoginViewController
+    func createLoginViewModule(navigationController: UINavigationController) -> LoginViewController
+    func createLandingViewModule(navigationController: UINavigationController) -> LandingViewController
 }
 
 final class ViewModuleFactory: ViewModuleFactoryType {
 
-    func createLoginViewModule() -> LoginViewController {
-        let viewController = LoginViewController.init(nibName: "LoginViewController", bundle: nil)
+    func createLoginViewModule(navigationController: UINavigationController) -> LoginViewController {
+        let viewController = LoginViewController.init(nibName: "LoginViewController", bundle: nil)        
+        viewController.viewModel = LoginViewModel(delegate: viewController, navigationController: navigationController)
+        return viewController
+    }
+
+    func createLandingViewModule(navigationController: UINavigationController) -> LandingViewController {
+        let viewController = LandingViewController.init(nibName: "LandingViewController", bundle: nil)
+        //TODO: Add view model
         return viewController
     }
 }

@@ -8,6 +8,12 @@
 
 import UIKit
 
+protocol LoginViewControllerDelegate: class {
+    func viewDidLoad()
+    func didTapForgotPasswordButton()
+    func didTapLoginButtonWith(user: String?, password: String?)
+}
+
 final class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
@@ -16,13 +22,13 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var forgotPasswordButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
 
-
-
+    var viewModel: LoginViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setup()
+        viewModel?.viewDidLoad()
     }
 }
 
@@ -39,21 +45,41 @@ private extension LoginViewController {
     func textFieldsSetUp() {
         usernameTextField.delegate = self
         passwordTextField.delegate = self
+
+        passwordTextField.isSecureTextEntry = true
     }
 }
 
 extension LoginViewController {
 
     @IBAction func forgotPasswordButtonTapped(_ sender: Any) {
-        //TODO:
+        viewModel?.didTapForgotPasswordButton()
     }
 
     @IBAction func loginButtonTapped(_ sender: Any) {
-        //TODO:
+        usernameTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        viewModel?.didTapLoginButtonWith(user: usernameTextField.text, password: passwordTextField.text)
     }
 }
 
 extension LoginViewController: UITextFieldDelegate {
 
-    //TODO:
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case usernameTextField:
+            usernameTextField.resignFirstResponder()
+        case passwordTextField:
+            passwordTextField.resignFirstResponder()
+        default:
+            break
+        }
+        return true
+    }
+}
+
+extension LoginViewController: LoginViewModelDelegate {
+    func viewModel(_ viewModel: LoginViewModelType, showErrorAlertWithMessage message: String) {
+        print(message)
+    }
 }
